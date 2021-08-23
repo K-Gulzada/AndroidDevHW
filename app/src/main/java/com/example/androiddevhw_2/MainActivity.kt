@@ -31,8 +31,22 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btn3 = findViewById<Button>(R.id.to_recycler_view)
+
+        btn3.setOnClickListener {
+            val intent = Intent(this, RecyclerViewActivity::class.java)
+            startActivity(intent)
+        }
+
 
     }
 
 
 }
+
+/*
+1. Создать репозиторий в GitHub и залить ваш проект
+2 создать ветку в котором реализовать RecyclerView и ViewBinding
+3. Создать pull request с этой ветки в мастер
+
+Я создам домашнее задание, вам нужно будет в нем отправить мне ссылку на пулл реквест*/
