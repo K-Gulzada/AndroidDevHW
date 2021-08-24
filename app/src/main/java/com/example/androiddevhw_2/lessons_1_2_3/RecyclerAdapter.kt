@@ -1,4 +1,4 @@
-package com.example.androiddevhw_2
+package com.example.androiddevhw_2.lessons_1_2_3
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.example.androiddevhw_2.R
 
 class RecyclerAdapter(private val data: ArrayList<Item>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuSetting"
+        android:icon="@drawable/ic_dragon"
+        android:title="Setting" />
+
+    <item
+        android:id="@+id/menu_profile"
+        android:icon="@drawable/ic_cube"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/file"
+        android:title="MenuFile">
+
+        <menu>
+            <item
+                android:id="@+id/menu_file_create"
+                android:title="new" />
+            <item
+                android:id="@+id/menu_file_open"
+                android:title="Open" />
+        </menu>
+    </item>
+
+
+</menu>

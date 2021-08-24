@@ -9,14 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevHW_2">
-        <activity android:name=".PdfViewActivity"></activity>
+        <activity android:name=".lessons_1_2_3.PdfViewActivity" />
         <activity
-            android:name=".BindingActivity"
+            android:name=".lessons_1_2_3.BindingActivity"
             android:exported="true" />
         <activity
-            android:name=".RecyclerViewActivity"
+            android:name=".lessons_1_2_3.RecyclerViewActivity"
             android:exported="true" />
-        <activity android:name=".RegisterActivity" />
+        <activity android:name=".lessons_1_2_3.RegisterActivity" />
+        <activity android:name=".lesson_4.MenuActivity"
+            android:exported="true"/>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

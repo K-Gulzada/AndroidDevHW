@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BindingActivity">
+    tools:context=".lessons_1_2_3.BindingActivity">
 
     <TextView
         android:id="@+id/text_for_binding"

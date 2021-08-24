@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">AndroidDevHW_2</string>
     <string name="redirect_to_pdf_view_text">Open Pdf View</string>
-    <string name="registration_text">Registration</string>
     <string name="open_pdf_btn_text">Open PDF</string>
+
+
+    <string name="register_text">Register</string>
+
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_description">Channel Description</string>
 </resources>
