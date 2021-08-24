@@ -1,6 +1,5 @@
 package com.example.androiddevhw_2
 
-import android.util.DisplayMetrics
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -36,8 +35,6 @@ class RecyclerAdapter(private val data: ArrayList<Item>) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.recycler_view_item, parent, false)
-        val metrics = DisplayMetrics()
-        view.getLayoutParams().height = metrics.heightPixels/3;
         return ViewHolder(view)
     }
 
