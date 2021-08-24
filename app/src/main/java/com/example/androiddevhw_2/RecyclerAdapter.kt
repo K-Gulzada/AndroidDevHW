@@ -8,16 +8,13 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 
-/*
 class RecyclerAdapter(private val data: ArrayList<Item>) :
     RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
-   */
-/* private var data:ArrayList<Item> = arrayListOf()
+   /* private var data:ArrayList<Item> = arrayListOf()
     fun setData(newData:ArrayList<Item>){
         data = newData
         notifyItemChanged(0)
-    }*//*
-
+    }*/
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         private val textView: TextView
@@ -26,7 +23,6 @@ class RecyclerAdapter(private val data: ArrayList<Item>) :
         init {
             textView = view.findViewById(R.id.recycler_title)
             imageView = view.findViewById(R.id.recycler_image)
-
         }
 
         fun setData(item: Item) {
@@ -53,4 +49,4 @@ class RecyclerAdapter(private val data: ArrayList<Item>) :
         val title: String,
         val imageId: Int
     )
-}*/
+}
