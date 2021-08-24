@@ -2,12 +2,9 @@ package com.example.androiddevhw_2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.LinearLayout
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.androiddevhw_2.RecyclerAdapter.Item
-
 
 class RecyclerViewActivity : AppCompatActivity() {
 

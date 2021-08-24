@@ -25,7 +25,6 @@ class RecyclerAdapter(private val data: ArrayList<Item>) :
         init {
             textView = view.findViewById(R.id.recycler_title)
             imageView = view.findViewById(R.id.recycler_image)
-
         }
 
         fun setData(item: Item) {
