@@ -1,4 +1,4 @@
-package com.example.androiddevhw_2
+package com.example.androiddevhw_2.lessons_1_2_3
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

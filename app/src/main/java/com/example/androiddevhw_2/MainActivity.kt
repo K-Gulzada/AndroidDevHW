@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androiddevhw_2.lessons_1_2_3.PdfViewActivity
+import com.example.androiddevhw_2.lessons_1_2_3.RecyclerViewActivity
 import com.example.androiddevhw_2.lessons_1_2_3.RegisterActivity
 
 
@@ -35,16 +36,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, RecyclerViewActivity::class.java)
             startActivity(intent)
         }
-
-
     }
-
-
 }
 
-/*
-1. Создать репозиторий в GitHub и залить ваш проект
-2 создать ветку в котором реализовать RecyclerView и ViewBinding
-3. Создать pull request с этой ветки в мастер
-
-Я создам домашнее задание, вам нужно будет в нем отправить мне ссылку на пулл реквест*/

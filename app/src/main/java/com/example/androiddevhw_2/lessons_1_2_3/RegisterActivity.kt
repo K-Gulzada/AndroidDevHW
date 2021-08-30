@@ -1,11 +1,9 @@
 package com.example.androiddevhw_2.lessons_1_2_3
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.androiddevhw_2.R
-import com.example.androiddevhw_2.lesson_4.NotificationBuilder
 
 class RegisterActivity : AppCompatActivity() {
 
