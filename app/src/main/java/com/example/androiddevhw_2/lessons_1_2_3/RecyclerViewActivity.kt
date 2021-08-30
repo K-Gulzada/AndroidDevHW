@@ -4,7 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.androiddevhw_2.RecyclerAdapter.Item
+import com.example.androiddevhw_2.R
+import com.example.androiddevhw_2.lessons_1_2_3.RecyclerAdapter.Item
 
 class RecyclerViewActivity : AppCompatActivity() {
 

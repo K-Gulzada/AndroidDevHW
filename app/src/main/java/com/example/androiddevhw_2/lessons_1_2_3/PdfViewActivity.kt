@@ -1,11 +1,11 @@
-package com.example.androiddevhw_2
+package com.example.androiddevhw_2.lessons_1_2_3
 
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.github.barteksc.pdfviewer.PDFView
+import com.example.androiddevhw_2.R
 
 class PdfViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

@@ -1,13 +1,11 @@
 package com.example.androiddevhw_2
 
 import android.content.Intent
-import android.net.Uri
-import android.os.Build
 import android.os.Bundle
-import android.os.Environment
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import java.io.File
+import com.example.androiddevhw_2.lessons_1_2_3.PdfViewActivity
+import com.example.androiddevhw_2.lessons_1_2_3.RegisterActivity
 
 
 class MainActivity : AppCompatActivity() {
