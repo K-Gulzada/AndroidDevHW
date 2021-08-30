@@ -90,7 +90,3 @@ class MenuActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
-
-// + 1) Add the Search view to the App Bar
-// - 2) класс с нотификациями
-// + 3) TimePickerDialog
