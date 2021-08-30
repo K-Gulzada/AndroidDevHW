@@ -44,7 +44,7 @@ class MenuActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.menuSetting -> {
-                ShowMessage("setting")
+                showMessage("setting")
                 true
             }
             R.id.menu_profile -> {
@@ -86,7 +86,7 @@ class MenuActivity : AppCompatActivity() {
 
     }
 
-    private fun ShowMessage(message: String) {
+    private fun showMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
