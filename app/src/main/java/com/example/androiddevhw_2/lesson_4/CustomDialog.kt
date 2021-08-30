@@ -14,8 +14,7 @@ class CustomDialog(context: Context): Dialog(context), View.OnClickListener {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.custom_dialog)
-      /*  val confirmationButton = findViewById<AppCompatButton>(R.id.dialog_confirm_button)
-        confirmationButton.setOnClickListener(this)*/
+
     }
 
      override fun onClick(v: View) {
