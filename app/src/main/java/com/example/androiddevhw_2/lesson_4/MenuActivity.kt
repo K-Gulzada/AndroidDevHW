@@ -1,6 +1,7 @@
 package com.example.androiddevhw_2.lesson_4
 
 import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -9,19 +10,25 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.widget.TextView
 import android.widget.Toast
 import com.example.androiddevhw_2.R
+import java.text.SimpleDateFormat
 import java.util.*
 
 class MenuActivity : AppCompatActivity() {
 
     private lateinit var notificationBuilder: NotificationBuilder
+    val calendar = Calendar.getInstance()
 
     val dateListener: DatePickerDialog.OnDateSetListener =
             DatePickerDialog.OnDateSetListener { datePicker, year: Int, month: Int, dayOfMonth: Int ->
                 println("ACADEMY: year=$year month=$month day=$dayOfMonth")
             }
-    val calendar = Calendar.getInstance()
+
+    val timeSetListener = TimePickerDialog.OnTimeSetListener { timePicker, hour: Int, minute: Int ->
+        println("ACADEMY: hour=$hour minute=$minute")
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,6 +58,17 @@ class MenuActivity : AppCompatActivity() {
                 //showMessage("Profile")
                 true
             }
+            R.id.menu_time_picker -> {
+                TimePickerDialog(
+                        this,
+                        timeSetListener,
+                        calendar.get(Calendar.HOUR_OF_DAY),
+                        calendar.get(Calendar.MINUTE),
+                        true
+                ).show()
+
+                true
+            }
             R.id.menu_file_create -> {
                 notificationBuilder.showNotification("Create", "Something")
                 true
@@ -72,3 +90,7 @@ class MenuActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 }
+
+// + 1) Add the Search view to the App Bar
+// - 2) класс с нотификациями
+// + 3) TimePickerDialog

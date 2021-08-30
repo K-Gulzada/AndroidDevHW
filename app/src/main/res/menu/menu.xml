@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:title="Search"/>
 
     <item
         android:id="@+id/menuSetting"
@@ -10,6 +20,11 @@
         android:id="@+id/menu_profile"
         android:icon="@drawable/ic_cube"
         android:title="Profile" />
+
+    <item
+        android:id="@+id/menu_time_picker"
+        android:icon="@drawable/ic_cube"
+        android:title="Time" />
 
     <item
         android:id="@+id/file"
