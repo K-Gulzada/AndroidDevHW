@@ -14,7 +14,6 @@ class CustomDialog(context: Context): Dialog(context), View.OnClickListener {
         super.onCreate(savedInstanceState)
         requestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.custom_dialog)
-
     }
 
      override fun onClick(v: View) {
