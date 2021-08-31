@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:tag="fragmentA"
+    android:id="@+id/id_fragment_A"
+    android:background="@android:color/white"
+    tools:context=".Hw_5_Fragment.StartFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="24sp"/>
+
+    <Button
+        android:id="@+id/start_fragment_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go to B"
+        android:layout_margin="100dp"/>
+
+</FrameLayout>

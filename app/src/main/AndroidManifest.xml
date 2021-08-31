@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androiddevhw_2">
 
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevHW_2">
+        <activity
+            android:name=".Hw_5_Fragment.FragmentActivity"
+            android:exported="true"/>
         <activity android:name=".lessons_1_2_3.PdfViewActivity" />
         <activity
             android:name=".lessons_1_2_3.BindingActivity"
@@ -17,8 +23,9 @@
             android:name=".lessons_1_2_3.RecyclerViewActivity"
             android:exported="true" />
         <activity android:name=".lessons_1_2_3.RegisterActivity" />
-        <activity android:name=".lesson_4.MenuActivity"
-            android:exported="true"/>
+        <activity
+            android:name=".lesson_4.MenuActivity"
+            android:exported="true" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
