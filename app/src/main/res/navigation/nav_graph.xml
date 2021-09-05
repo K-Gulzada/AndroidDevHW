@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<navigation
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
@@ -31,7 +30,24 @@
             android:name="subtitle"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_finishFragment_to_CFragment"
+            app:destination="@id/CFragment" />
 
+    </fragment>
+    <fragment
+        android:id="@+id/CFragment"
+        android:name="com.example.androiddevhw_2.Hw_5_Fragment.CFragment"
+        android:label="fragment_c"
+        tools:layout="@layout/fragment_c">
+        <argument
+            android:name="title"
+            app:argType="string" />
+
+        <argument
+            android:name="subtitle"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 
 </navigation>

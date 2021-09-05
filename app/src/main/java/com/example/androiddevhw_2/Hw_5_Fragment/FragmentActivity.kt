@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.example.androiddevhw_2.R
 
-class FragmentActivity : AppCompatActivity() {
+/*class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
@@ -45,6 +45,18 @@ class FragmentActivity : AppCompatActivity() {
         showAFragment()
         println(supportFragmentManager.backStackEntryCount)
     }
+}*/
+
+// после того как добавили navigation
+
+class FragmentActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fragment)
+
+    }
+
+
 }
 
 /*
