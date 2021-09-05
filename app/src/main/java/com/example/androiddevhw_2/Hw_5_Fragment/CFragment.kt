@@ -78,6 +78,7 @@ class CFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        binding.cFragmentBtn.isClickable = false
         binding.title.text = args.title
         binding.subtitle.text = args.subtitle ?: "C Fragment subtitle"
 
