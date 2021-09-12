@@ -36,46 +36,19 @@ class RxActivity : AppCompatActivity() {
         commentRecyclerView = findViewById(R.id.comments_recycler_view)
         progressBar = findViewById(R.id.progress_bar)
 
-        /*  findViewById<Button>(R.id.create_user_btn).setOnClickListener {
-
-          }*/
         userRecyclerView.layoutManager = LinearLayoutManager(this)
         commentRecyclerView.layoutManager = LinearLayoutManager(this)
         userRecyclerView.adapter = userAdapter
         commentRecyclerView.adapter = commentAdapter
 
         fetchData()
-
-        // 01.09.21
-
-        //fetchUsers наверху закоментим
-        /*   val userString = intent.getStringExtra(USER)
-    val user = Json.decodeFromString<User>(
-        userString ?: throw Exception("User not Found")
-    )
-    println("ACADEMY $userString")
-    adapter.setData(arrayListOf(user))*/
-
-        // 02.09.21
-        // обратно раскоментим fetchUsers(), а 01,09,21 закоментим
-        // Добавили commentRecyclerView, commentAdapter,  commentRecyclerView.layoutManager,
-        // commentRecyclerView.adapter
-
-
     }
-
-    //01.09.21================================================
-    companion object {
-        const val USER = "user"
-    }
-    //================================================
 
     private inner class Wrapper(
         val users: ArrayList<User>,
         val comments: ArrayList<Comment>
     )
 
-    // 02.09.21
     private fun fetchData() {
         progressBar.visibility = View.VISIBLE
 
@@ -97,11 +70,6 @@ class RxActivity : AppCompatActivity() {
                     hideProgress()
                     userAdapter.setData(t.users)
                     commentAdapter.setData(t.comments)
-
-                    // и так и по версии наверху работает, нужно бы разобраться
-
-                    /*  setUsers(t.users)
-                      setComments(t.comments)*/
                 }
 
                 override fun onError(e: Throwable) {
