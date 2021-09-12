@@ -63,6 +63,13 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
     implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0'
 
+    // COROUTINES 02.09.21 (новая тема, вторая половина урока lesson_8)
+    // помогает эффективно работать с многопоточностью
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
     //
     def nav_version = "2.3.5"
 

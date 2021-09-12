@@ -13,10 +13,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidDevHW_2">
+        <activity android:name=".hw_8_coroutine.CoroutineRegisterActivity"></activity>
+        <activity
+            android:name=".hw_8_coroutine.CoroutineActivity"
+            android:exported="true" />
         <activity
             android:name=".hw_7_rx.RxActivity"
-            android:exported="true"
-            />
+            android:exported="true" />
         <activity
             android:name=".hw_6_broadcastReceiver.ServiceActivity"
             android:exported="true" />
@@ -42,7 +45,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".hw_6_broadcastReceiver.TestBroadcastReceiver"></receiver>
+        <receiver android:name=".hw_6_broadcastReceiver.TestBroadcastReceiver" />
     </application>
 
 </manifest>
