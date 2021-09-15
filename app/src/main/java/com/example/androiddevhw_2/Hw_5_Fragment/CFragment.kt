@@ -7,12 +7,16 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.navArgs
 import com.example.androiddevhw_2.R
+import com.example.androiddevhw_2.databinding.FragmentCBinding
+import com.example.androiddevhw_2.databinding.FragmentFinishBinding
 
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
+/*
 class CFragment : Fragment() {
 
     private var param1: String? = null
@@ -36,9 +40,11 @@ class CFragment : Fragment() {
         super.onStart()
         view?.findViewById<TextView>(R.id.title)?.setText(param1 + param2)
 
-        this.view?.findViewById<Button>(R.id.c_fragment_btn)?.setOnClickListener {
+       */
+/* this.view?.findViewById<Button>(R.id.c_fragment_btn)?.setOnClickListener {
             (activity as? FragmentActivity)?.backToAFragment()
-        }
+        }*//*
+
     }
 
     companion object {
@@ -52,3 +58,30 @@ class CFragment : Fragment() {
             }
     }
 }
+*/
+
+
+class CFragment : Fragment() {
+
+    //val args: FinishFragmentArgs by navArgs()
+    val args: CFragmentArgs by navArgs()
+    private lateinit var binding: FragmentCBinding
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+
+        binding = FragmentCBinding.inflate(layoutInflater)
+        return binding.root
+    }
+
+    override fun onStart() {
+        super.onStart()
+        binding.cFragmentBtn.isClickable = false
+        binding.title.text = args.title
+        binding.subtitle.text = args.subtitle ?: "C Fragment subtitle"
+
+    }
+}
+

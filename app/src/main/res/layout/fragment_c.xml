@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_500"
+    android:background="#4EEEAB"
     tools:context=".Hw_5_Fragment.CFragment">
 
 
@@ -13,11 +13,19 @@
         android:layout_height="wrap_content"
         android:textSize="24sp"/>
 
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:textSize="16sp" />
+
     <Button
         android:id="@+id/c_fragment_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back to A"
         android:layout_margin="100dp"/>
+
 
 </FrameLayout>

@@ -7,11 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
 import com.example.androiddevhw_2.R
 
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
+/*
 class StartFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
@@ -48,4 +50,38 @@ class StartFragment : Fragment() {
             }
     }
 
+}*/
+
+// Navigation
+
+class StartFragment : Fragment() {
+    private var param1: String? = null
+    private var param2: String? = null
+
+    override fun onCreate( savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        arguments?.let {
+            param1 = it.getString(ARG_PARAM1)
+            param2 = it.getString(ARG_PARAM2)
+        }
+    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        return inflater.inflate(R.layout.fragment_start, container, false)
+    }
+
+
+     override fun onStart() {
+         super.onStart()
+         this.view?.findViewById<TextView>(R.id.title)?.text = "StartFragment"
+         this.view?.findViewById<Button>(R.id.start_fragment_btn)?.setOnClickListener{
+
+             val action = StartFragmentDirections.actionStartFragmentToFinishFragment("FinishFragment", null )
+             findNavController().navigate(action)
+         }
+     }
 }

@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentManager
 import com.example.androiddevhw_2.R
 
-class FragmentActivity : AppCompatActivity() {
+/*class FragmentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fragment)
@@ -19,7 +19,6 @@ class FragmentActivity : AppCompatActivity() {
             .add(R.id.frame_layout, StartFragment.newInstance("A Fragment  ", "Just text"))
             .addToBackStack("BackToA")
             .commit()
-        println(supportFragmentManager.backStackEntryCount)
     }
 
     fun showBFragment() {
@@ -27,7 +26,6 @@ class FragmentActivity : AppCompatActivity() {
             .beginTransaction()
             .add(R.id.frame_layout, FinishFragment.newInstance("B Fragment  ", "Just text"))
             .commit()
-        println(supportFragmentManager.backStackEntryCount)
     }
 
     fun showCFragment() {
@@ -35,15 +33,21 @@ class FragmentActivity : AppCompatActivity() {
             .beginTransaction()
             .add(R.id.frame_layout, CFragment.newInstance("C Fragment  ", "Just text"))
             .commit()
-        println(supportFragmentManager.backStackEntryCount)
     }
 
     fun backToAFragment() {
-
         getSupportFragmentManager()
             .popBackStack(null, 0);
         showAFragment()
-        println(supportFragmentManager.backStackEntryCount)
+    }
+}*/
+
+// navigation
+
+class FragmentActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_fragment)
     }
 }
 
