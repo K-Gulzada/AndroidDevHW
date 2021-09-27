@@ -11,15 +11,17 @@ data class User(
     val name: String,
     val email: String,
     val gender: Gender,
-    val status: Status,
+    val status: Status? = null,
     val field: String? = null,
     val message: String? = null
 )
+
 @Serializable
 enum class Gender {
     male,
     female;
 }
+
 @Serializable
 enum class Status {
     active,
