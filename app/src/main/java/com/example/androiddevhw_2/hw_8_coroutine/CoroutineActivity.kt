@@ -74,37 +74,4 @@ class CoroutineActivity : AppCompatActivity() {
              }
          }
      }
-
-
-
-    // Flow<List<User>> (так лучше не делать)
-
-  /*  private fun loadUsers() {
-        val client = RetrofitClient()
-        val userList: ArrayList<User> = arrayListOf()
-        job = CoroutineScope(Dispatchers.Main).launch {
-            try {
-                client.getUsers()
-                    .onStart {
-                        binding.progressBar.visibility = View.VISIBLE
-                    }
-                    .catch { exception ->
-                        Toast.makeText(
-                            this@CoroutineActivity,
-                            exception.message,
-                            Toast.LENGTH_SHORT
-                        ).show()
-                    }
-                    .onCompletion { binding.progressBar.visibility = View.GONE }
-                    .collect {
-                        println("#ACADEMY STEP 1 ${Looper.myLooper() == Looper.getMainLooper()}")
-                        userList.addAll(it)
-                        adapter.setData(userList)
-                    }
-
-            } catch (e: Exception) {
-                e.printStackTrace()
-            }
-        }
-    }*/
 }

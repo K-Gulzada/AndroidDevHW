@@ -7,18 +7,6 @@ import retrofit2.http.Body
 import retrofit2.http.GET
 import retrofit2.http.POST
 
-/*interface CoroutineApiService {
-
-    @GET("/public/v1/users")
-   suspend fun getUsers(): Users
-
-    @GET("/public/v1/comments")
-    suspend  fun getComments(): Comments
-
-    @POST("/public/v1/users")
-    suspend fun CreateUser(@Body user: User):User
-}*/
-
 // 06.09.21 coroutine flow
 
 interface CoroutineApiService {
